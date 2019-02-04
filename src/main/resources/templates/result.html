@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Resultado da consulta</title>
+</head>
+<body>
+	<table style="width:800px">
+		<tr>
+			<td colspan="2" rowspan="6"><img th:src="${picture}"
+				width="100px"></td>
+		</tr>
+		<tr>
+			<td width="200px">Nome:</td>
+			<td th:text="${name}"></td>
+		</tr>
+		<tr>
+			<td>E-mail:</td>
+			<td th:text="${email}"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><a th:href="${link}">Link do Google+</a></td>
+		</tr>
+		<tr>
+			<td colspan="2">Resposta do Google:</td>
+		</tr>
+		<tr>
+			<td colspan="2" th:text="${principal}"></td>
+		</tr>
+	</table>
+</body>
+</html>
